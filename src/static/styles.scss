@@ -1,0 +1,97 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=Courgette');
+@import url('http://fonts.googleapis.com/css?family=Playball');
+
+$purple-mid: #4B2D73;
+$purple-light: #8F78AD;
+$purple-dark: #1C053A;
+
+body, html{
+	font-family: Courgette;
+	margin: 0;
+	padding: 0;
+}
+
+.appWrapper{
+	background-color: $purple-dark;
+	color: white;
+}
+
+.nice-box{
+	width: 50%;
+	color:white;
+	background-color: $purple-light;
+	opacity: .9;
+	margin-top: 10%;
+}
+
+.list-container{
+	display: inline-block;
+	background-color: $purple-light;
+	min-height: 100%;
+	max-width: 70%;
+	margin-left: 5%;
+}
+.pattern-box{
+	display: inline-block;
+	background-color: $purple-light;
+	opacity: .8;
+	width: 25%;
+	margin: 2em;
+	padding: 1em;
+}
+
+.name-box{
+	background-color: $purple-dark;
+	padding: 1em;
+	min-height: 25%;
+}
+
+.image-box{
+	background-color: $purple-dark;
+	padding: 1em;
+	min-height:25%;
+}
+
+video{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	z-index: 1;
+}
+
+.align-right{
+	float:right;
+}
+
+.dot-border{
+	border: white dotted 2px;
+}
+.text-box{
+	overflow: hidden;
+	font-family: Courgette;
+	color: white;
+	position: absolute;
+	z-index: 2;
+	background: rgba(200,200,100,0.4);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+
+.text-box-inside{
+	opacity: .7;
+	padding: 2em;
+	max-width: 30%;
+	background: $purple-mid;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.link-box{
+	padding: 2em;
+	margin: 1em;
+}

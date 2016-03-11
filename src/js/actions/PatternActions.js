@@ -1,0 +1,59 @@
+import dispatcher from "../dispatcher"
+
+
+export function createPattern(newPatternObject){
+		$.ajax({
+			url: "http://localhost:4444/api/patterns",
+			type: 'POST',
+			data: newPatternObject,
+			success: function(postedNewPatternObject){
+				console.log("actions.createPattern() says")
+				console.log("2) okay so it got added...")
+				console.log(postedNewPatternObject)
+						dispatcher.dispatch({
+											type: "CREATE_PATTERN",
+											postedNewPatternObject
+														});
+			}.bind(this),
+			error: function(xhr, status, err){
+				console.error('./patterns', status, err.toString());
+			}.bind(this)
+		});
+	}
+
+export function removePattern(id){
+			$.ajax({
+			url: "http://localhost:4444/api/patterns/" + id,
+			type: "DELETE",
+			dataType: 'json',
+			success: function(){
+				console.log("actions.removePattern()")
+				dispatcher.dispatch({
+					type: "REMOVE_ONE"
+				})
+			}
+		})
+}
+
+export function initializePatterns(){
+	$.ajax({
+		url: "http://localhost:4444/api/patterns",
+		type: 'GET',
+		dataType: "json",
+		success: function(data){
+			console.log("actions.initializePatterns() says")
+			console.log("2) patterns initialized");
+			console.log(data)
+			dispatcher.dispatch({type: "FETCH_PATTERNS",
+								data: data});
+			}.bind(this),
+			error: function(xhr, status, err){
+				console.error('./patterns', status, err.toString());
+				}
+	});
+	}
+
+
+
+
+

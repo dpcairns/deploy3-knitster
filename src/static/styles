@@ -1,0 +1,42 @@
+/*
+Syntax error: Invalid property: "Backtrace:" (no value).
+        on line 4 of src/static/styles
+
+1: /*
+2: Errno::ENOENT: No such file or directory - src/static/styles
+3: 
+4: Backtrace:
+5: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:360:in `read'
+6: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:360:in `update_stylesheet'
+7: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+8: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+9: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+
+Backtrace:
+src/static/styles:4
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:614:in `parse_property'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:597:in `parse_property_or_rule'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:578:in `parse_line'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:471:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:490:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:489:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:489:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:345:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:235:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:107:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:459:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of src/static/styles\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - src/static/styles\A 3: \A 4: Backtrace:\A 5: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:360:in `read'\A 6: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:360:in `update_stylesheet'\A 7: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'\A 8: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'\A 9: /usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'"; }

@@ -1,0 +1,135 @@
+{
+	"patterns": [{
+			"name": "Doodle stitch",
+			"id": 1,
+			"img": "knit2.png",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		},
+
+		{
+			"name": "Ham to the knee stitch",
+			"id": 2,
+			"img": "knit1.jpg",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		},
+
+		{
+			"name": "Grandma double stitch",
+			"id": 3,
+			"img": "quilt.jpg",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		}, {
+			"name": "Doodle stitch",
+			"id": 4,
+			"img": "knit2.png",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		}, {
+			"name": "Doodle stitch",
+			"id": 5,
+			"img": "knit2.png",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		}, {
+			"name": "Doodle stitch",
+			"id": 6,
+			"img": "knit2.png",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		}, {
+			"name": "Doodle stitch",
+			"id": 7,
+			"img": "knit2.png",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		}, {
+			"name": "Doodle stitch",
+			"id": 8,
+			"img": "knit2.png",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		}, {
+			"name": "Doodle stitch",
+			"id": 9,
+			"img": "knit2.png",
+			"rows": ["Switch to US 4/3.5 mm dpns or magic loop",
+				"when needed to accommodate smaller crown",
+				"circumference.",
+				"Row 1: P to last 2 sts. P2tog. 104 sts.",
+				"Row 2, 4, 6, and 8: P to end",
+				"Row 3: [P2, P2tog]. Repeat bracketed sts to end. 78 sts.",
+				"Row 5: [P1, P2tog]. Repeat bracketed sts to end. 52 sts.",
+				"Row 7: P2tog to end. 26 sts.",
+				"Row 9: P2 tog to end. 13 sts."
+			]
+		}
+
+	]
+}
