@@ -3,7 +3,7 @@ import dispatcher from "../dispatcher"
 // 104.236.143-84
 export function createPattern(newPatternObject){
 		$.ajax({
-			url: "http://localhost:5555/api/patterns",
+			url: "http://104.236.143.84:5555/api/patterns",
 			type: 'POST',
 			data: newPatternObject,
 			success: function(postedNewPatternObject){
@@ -23,7 +23,7 @@ export function createPattern(newPatternObject){
 
 export function removePattern(id){
 			$.ajax({
-			url: "http://localhost:5555/api/patterns/" + id,
+			url: "http://104.236.143.84:5555/api/patterns/" + id,
 			type: "DELETE",
 			dataType: 'json',
 			success: function(){
@@ -37,7 +37,7 @@ export function removePattern(id){
 
 export function initializePatterns(){
 	$.ajax({
-		url: "http://localhost:5555/api/patterns",
+		url: "http://104.236.143.84:5555/api/patterns",
 		type: 'GET',
 		dataType: "json",
 		success: function(data){
