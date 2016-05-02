@@ -18,9 +18,7 @@ ReactDOM.render(
 <Router history={hashHistory}>
 	<Route path="/" component={VideoSplash}></Route>
 	<Route path="index/:currentUser" name="index" component={Layout}>
-		<IndexRoute component={Home}></IndexRoute>
-		<Route path="/newPattern" name="newPattern" component={PatternForm}></Route>
+		<IndexRoute component={Home} name="home"></IndexRoute>
 		<Route path="/patterns" name="patterns" component={List}></Route>
-		<Route path="/patterns/:PatternId" component={Detail}></Route>
 	</Route>
 </Router>, app);

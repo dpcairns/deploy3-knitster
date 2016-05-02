@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router"
 import PatternStore from "./PatternStore"
 import * as PatternActions from "../actions/PatternActions"
+import {Button} from 'react-bootstrap'
 
 export default class PatternForm extends React.Component{
 	constructor(){
@@ -47,7 +48,7 @@ export default class PatternForm extends React.Component{
 			<form class="pattern-form bg-red-small" onSubmit={this.handleSubmit.bind(this)}>
 				<fieldset>
 					<div class="form-group">
-					  <label for="name" class="control-label">Pattern name</label> 
+					  <label for="name" class="control-label">Pattern name</label>
 					    <input type="text" class="form-control" value={this.state.name} onChange={this.handleNameChange.bind(this)} id="name" placeholder="ex: the double-trouble hot-cross bun"/>
 					</div>
 					<div class="form-group">
@@ -63,19 +64,20 @@ export default class PatternForm extends React.Component{
 					</div>
 					<div class="form-group">
 					  <label class="control-label" for="description">Give us a short description of the project:</label>
-					    <textarea class="form-control" id="description" value={this.state.description} onChange={this.handleDescriptionChange.bind(this)} name="description" rows="1" required=""></textarea>   
+					    <textarea class="form-control" id="description" value={this.state.description} onChange={this.handleDescriptionChange.bind(this)} name="description" rows="1" required=""></textarea>
 					</div>
 					<div class="form-group">
 					  <label class="control-label" for="rows">Paste in your pattern instructions:</label>
-					    <textarea class="form-control" id="rows" value={this.state.rows} onChange={this.handleRowsChange.bind(this)} name="rows" rows="3" required=""></textarea>   
+					    <textarea class="form-control" id="rows" value={this.state.rows} onChange={this.handleRowsChange.bind(this)} name="rows" rows="3" required=""></textarea>
 					</div>
-					<input class="button btn-danger align-right" type="submit" value="Post"/>
+          <Button onClick={this.props.toggleFormModal.bind(this)}>close</Button>
+
+					<input class="button btn-danger align-right" type="submit" value="post"/>
 				</fieldset>
 			</form>
+
 		</div>
 
 		)
 	}
 }
-
-

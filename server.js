@@ -1,5 +1,5 @@
 var express = require('express');
-var bodyParser = require('body-parser'); 
+var bodyParser = require('body-parser');
 var app = express();
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 	extended: true
 	}))
 
-app.use(express.static(__dirname + "/src")); 
+app.use(express.static(__dirname + "/src"));
 
 router.use(function(req,res,next){
 	res.header("Access-Control-Allow-Origin", "*");
@@ -29,7 +29,7 @@ router.get('/', function(req,res){
 });
 
 router.route('/patterns')
-.get(function (req, res) { 
+.get(function (req, res) {
 	console.log('finding all knits in knitster')
 	Pattern.find({}).exec(function(err, patterns){
 		if(err){
@@ -74,7 +74,7 @@ router.route('/patterns/:PatternId')
 })
 .delete(function (req, res) {
 	var id = req.params.PatternId;
-	Pattern.find({_id: id}).remove().exec(function (err, doc){ 
+	Pattern.find({_id: id}).remove().exec(function (err, doc){
 		res.json(doc);
 	});
 });

@@ -14,7 +14,6 @@ export default class Layout extends React.Component {
 		<div>
 		<Nav currentUser={this.state.currentUser}/>
 		{this.props.children}
-		<Footer/>
 		</div>
 
 		);

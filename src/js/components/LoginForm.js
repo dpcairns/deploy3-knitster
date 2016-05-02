@@ -17,11 +17,10 @@ export default class LoginForm extends React.Component {
 
  <div class="container-fluid small-top-gap small-bottom-gap">
   <div class="row">
+
    <div class="col-md-12 col-sm-12 col-xs-12">
     <form method="post">
      <div class="form-group ">
-     !!! This form is totally bogus: no data will be saved beyond this session !!!
-     <br/>
       <label class="control-label requiredField" for="username">
        Username
        <span class="asteriskField">

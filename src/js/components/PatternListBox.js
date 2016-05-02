@@ -33,10 +33,10 @@ export default class PatternListBox extends React.Component {
 		else if(this.state.showDetail===true) {
 				this.setState({detailStyle: {
 					display: "none"}})
-			
+
 			this.setState({showDetail: false})
 			console.log(this.state)
-		
+
 	}
 }
 	render(){
@@ -44,19 +44,18 @@ export default class PatternListBox extends React.Component {
 
 	return(
 		<div>
-			<div class="bg-red-large small-bottom-gap dot-border round noverflow">
+			<div class="bg-red-large one-box small-bottom-gap dot-border round">
 				<div class="row">
 					<div class="col-md-6">
 							<button class="btn btn-small btn-warning" onClick={this.toggleDetail.bind(this)}>
 								Show this pattern
 							</button>
-							<div class="name-box bg-red-small">
-								<h1>
-									{this.props.name}
-								</h1>
-							</div>
-							<div class="image-box bg-red-small">
+					<div>
+
+							<div class="image-box bg-red-small" style={{border: "solid pink 1px", background: "lightyellow", height: "50%", borderRadius: "15px", padding:"10px", overflow:"ellipsis"}}>
 								<h3>
+								{this.props.name}
+								<br/>
 									<img src={imgsrc + this.props.img} height="100" width="100" alt={this.props.name}/>
 								</h3>
 							</div>
@@ -64,17 +63,21 @@ export default class PatternListBox extends React.Component {
 							<div>
 								<RemoveButton id={this.props.id} />
 							</div>
+							</div>
 					</div>
-					<div class="col-md-5 text-center noverflow">
+					<div class="col-md-6 text-center noverflow">
 								<h4><i>{this.props.description}</i></h4>
-								<ul>
+								<div style={{border: "solid pink 1px", background: "lightyellow", height: "90%", borderRadius: "15px", padding:"10px", overflow:"ellipsis"}}>
+								<ul class="text-right" style={{listStyle: 'square url("../static/img/bullet.jpg")'}}><h5>
 								{this.props.rows.map(function(row){
 									return(
-										<li>{row}</li>
+										<li style={{padding: "5px"}}>{row}</li>
 										)
 								})
 							}
+							</h5>
 								</ul>
+								</div>
 					</div>
 				</div>
 			</div>
@@ -90,7 +93,7 @@ export default class PatternListBox extends React.Component {
 
 					</ThisDetail>
 			</div>
-				
+
 			</div>
 			</div>
 		</div>

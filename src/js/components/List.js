@@ -1,5 +1,4 @@
 import React from "react"
-
 import { Link } from "react-router"
 import PatternStore from "./PatternStore"
 import Links from "./Links"
@@ -8,12 +7,15 @@ import PatternListHeader from "./PatternListHeader"
 import PatternListGrid from "./PatternListGrid"
 import PatternForm from "./PatternForm"
 import * as PatternActions from "../actions/PatternActions"
+import { Modal, Button } from "react-bootstrap"
 
 export default class List extends React.Component {
 		constructor(){
 			super();
 			this.getPatterns = this.getPatterns.bind(this);
-			this.state = {}
+			this.state = {
+				showFormModal: false
+			}
 		}
 
 	getPatterns(){
@@ -34,21 +36,34 @@ export default class List extends React.Component {
 		console.log("list.componentWillunmount()")
 		PatternStore.removeListener("change", this.getPatterns);
 	}
-	
+
+	toggleFormModal(){
+		this.setState({
+			showFormModal: !this.state.showFormModal
+		})
+	}
+
 	render(){
 
 
 
 	return(
-		<div class="container-fluid">
-			<div class="col-md-8 inline-block scroll-y">
-				<PatternListHeader />
-				<PatternListGrid patterns={this.state.patterns} />
-			</div>
-			<div class="col-md-4">
-					<PatternForm />
+		<div class="container-fluid scroll-y">
+			<div class="container center">
+				<PatternListHeader/>
+				<PatternListGrid patterns={this.state.patterns}  toggleFormModal={this.toggleFormModal.bind(this)} />
 			</div>
 
+			<Modal show={this.state.showFormModal} bsSize="lg" aria-labelledby="contained-modal-title-lg">
+			<Modal.Header>
+				<Modal.Title id="contained-modal-title-sm">Add a pattern!</Modal.Title>
+			</Modal.Header>
+			<Modal.Body>
+			 <PatternForm toggleFormModal={this.toggleFormModal.bind(this)}/>
+			</Modal.Body>
+			<Modal.Footer>
+			</Modal.Footer>
+		</Modal>
 		</div>
 		)
 	}
