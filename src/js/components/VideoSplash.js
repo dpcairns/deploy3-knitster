@@ -9,16 +9,14 @@ export default class VideoSplash extends React.Component {
 		super();
 		this.state = {
 			videoLibrary: [
-							"../static/img/knitting.mp4#t=100",
-							"../static/img/knitting7.mp4#t=100",
-							]
+							"../static/img/knitting.mp4#t=100",							]
 						}
 		
 }
 	//const videoLibraryDelay = this.state.videoLibrary.map(function(item){
 		//return item + "#t=200"
 	render() {
-		const randomNumber = Math.floor((Math.random() * (this.state.videoLibrary.length - 1)) + 1)
+		const randomNumber = Math.floor((Math.random() * (this.state.videoLibrary.length - 1)))
 		
 		return (
 	<div class="noverflow">

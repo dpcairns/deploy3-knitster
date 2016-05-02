@@ -37,7 +37,7 @@ export default class LoginForm extends React.Component {
         *
        </span>
       </label>
-      <input class="form-control" id="text" name="text" placeholder="ex: password1234" type="text"/>
+      <input class="form-control" id="text" name="text" placeholder="ex: password1234" type="password"/>
      </div>
      <div class="form-group ">
       <label class="control-label requiredField" for="text1">
@@ -46,7 +46,7 @@ export default class LoginForm extends React.Component {
         *
        </span>
       </label>
-      <input class="form-control" id="text1" name="text1" placeholder="ex: password1234" type="text"/>
+      <input class="form-control" id="text1" name="text1" placeholder="ex: password1234" type="password"/>
      </div>
      <div class="form-group">
       <div>

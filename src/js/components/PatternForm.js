@@ -53,6 +53,7 @@ export default class PatternForm extends React.Component{
 					<div class="form-group">
 					  <label for="img" class="control-label">What are we stitching here?</label>
 					    <select class="form-control" value={this.state.img} onChange={this.handleImgChange.bind(this)} id="img">
+							<option value="" disabled selected>Pick one (required)</option>
 							<option value="knit2.png">Hat</option>
 							<option value="scarf.jpg">Scarf</option>
 							<option value="sweater.jpg">Sweater</option>

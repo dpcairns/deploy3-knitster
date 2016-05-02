@@ -66,7 +66,7 @@ export default class PatternListBox extends React.Component {
 							</div>
 					</div>
 					<div class="col-md-5 text-center noverflow">
-								<h2>{this.props.description}</h2>
+								<h4><i>{this.props.description}</i></h4>
 								<ul>
 								{this.props.rows.map(function(row){
 									return(
