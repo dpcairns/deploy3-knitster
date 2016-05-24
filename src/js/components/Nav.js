@@ -4,6 +4,7 @@ import { Link } from "react-router"
 
 export default class Layout extends React.Component {
 	render() {
+    let currentUser = this.props.currentUser
 		return (
 
 		<nav class="navbar head-box bg-red-large">
@@ -11,7 +12,7 @@ export default class Layout extends React.Component {
 		  	<div class="col-md-offset-1 col-md-5">
 			    <div class="display-inline">
 			   <h5>
-			      <a href="#">knitster</a> --	welcome, {this.props.currentUser}!
+			      <a href="#">knitster</a> --	welcome, {currentUser? currentUser : "guest"}!
 				      || <a href="#" class="btn btn-xs btn-warning">logout
 				     </a>
 			  </h5>
@@ -21,7 +22,7 @@ export default class Layout extends React.Component {
 			 <h5>
        <div class="navbar-right">
        <ul class="list-inline">
-       <li><Link to="/">home</Link></li>
+       <li><Link to={`index/${currentUser}`}>home</Link></li>
        <li><Link to="patterns">patterns</Link></li>
        </ul>
        </div>

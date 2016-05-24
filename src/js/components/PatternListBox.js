@@ -44,7 +44,7 @@ export default class PatternListBox extends React.Component {
 
 	return(
 		<div>
-			<div class="bg-red-large one-box small-bottom-gap dot-border round">
+			<div class="bg-red-large one-box small-bottom-gap dot-border round shady shadow">
 				<div class="row">
 					<div class="col-md-6">
 							<button class="btn btn-small btn-warning" onClick={this.toggleDetail.bind(this)}>
@@ -52,12 +52,12 @@ export default class PatternListBox extends React.Component {
 							</button>
 					<div>
 
-							<div class="image-box bg-red-small" style={{border: "solid pink 1px", background: "lightyellow", height: "50%", borderRadius: "15px", padding:"10px", overflow:"ellipsis"}}>
+							<div class="image-box dot-border round bg-red-small small-top-gap" style={{border: "solid pink 1px",  opacity: ".8",  background: "#fff7f8", height: "50%", padding:"10px", overflow:"ellipsis"}}>
 								<h3>
 								{this.props.name}
-								<br/>
-									<img src={imgsrc + this.props.img} height="100" width="100" alt={this.props.name}/>
-								</h3>
+                </h3>
+
+									<img src={imgsrc + this.props.img} class="small-top-gap" height="150" width="150" alt={this.props.name}/>
 							</div>
 							<br/>
 							<div>
@@ -65,9 +65,9 @@ export default class PatternListBox extends React.Component {
 							</div>
 							</div>
 					</div>
-					<div class="col-md-6 text-center noverflow">
+					<div class="col-md-6 text-center">
 								<h4><i>{this.props.description}</i></h4>
-								<div style={{border: "solid pink 1px", background: "lightyellow", height: "90%", borderRadius: "15px", padding:"10px", overflow:"ellipsis"}}>
+								<div class="dot-border round" style={{opacity: ".8", background: "#fff7f8", height: "65%", padding:"30px", overflow: "hidden", textOverflow:"ellipsis"}}>
 								<ul class="text-right" style={{listStyle: 'square url("../static/img/bullet.jpg")'}}><h5>
 								{this.props.rows.map(function(row){
 									return(

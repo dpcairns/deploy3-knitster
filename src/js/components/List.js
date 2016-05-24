@@ -48,9 +48,8 @@ export default class List extends React.Component {
 
 
 	return(
-		<div class="container-fluid scroll-y">
-			<div class="container center">
-				<PatternListHeader/>
+		<div class="container-fluid small-top-gap">
+			<div class="container center woosh">
 				<PatternListGrid patterns={this.state.patterns}  toggleFormModal={this.toggleFormModal.bind(this)} />
 			</div>
 

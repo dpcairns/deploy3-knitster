@@ -3,11 +3,67 @@
 
 
 body, html {
-  margin: 0;
-  padding: 0;
-    overflow-y: hidden;
+  background: white;
     overflow-x: hidden;
 }
+
+.woosh{
+  animation: from-left .8s linear;
+}
+
+.wiggly:hover{
+  animation: wiggle 1s ease;
+}
+
+nav{
+  box-shadow: 10px 10px 5px -6px rgba(235,221,235,1);
+}
+
+.shadow{
+  box-shadow: 15px 15px 5px -6px rgba(235,221,235,1);
+}
+
+.shady {
+  transition: box-shadow 1s;
+}
+
+.shady:hover{
+  box-shadow: -2px 3px 45px 0px rgba(247,129,247,1);
+}
+
+@keyframes wiggle{
+    25% {
+  -ms-transform: rotate(2deg); /* IE 9 */
+   -webkit-transform: rotate(2deg); /* Safari */
+   transform: rotate(2deg);}
+   75% {
+     -ms-transform: rotate(0deg); /* IE 9 */
+     -webkit-transform: rotate(0deg); /* Safari */
+     transform: rotate(0deg);}
+ }
+
+
+.wooshAway{
+  animation: to-right .8s linear;
+}
+
+.yarn-big{
+  animation: from-left 1s linear;
+  margin-top: 65%;
+  margin-left: -250px;
+}
+
+@keyframes from-left{
+  from {margin-left: -2000px;}
+  to {margin-left: -250px;}
+}
+
+
+@keyframes to-right{
+  from {margin-right: 0px;}
+  to {margin-right: -2000px;}
+}
+
 
 .display-inline{
   display: inline;
@@ -25,7 +81,6 @@ body, html {
   text-align: center;
   margin-bottom: 1em;
   padding: 1em;
-  height: 30em;
   vertical-align: middle;
 }
 
@@ -45,6 +100,9 @@ body, html {
           z-index: 3;
 }
 
+a{
+  color: darkred !important;
+}
 
 ul.nav a:hover, a:active {
   color: red !important;
@@ -53,11 +111,6 @@ ul.nav a:hover, a:active {
   #ffffff 0, #ffffff .3em) !important;
 }
 
-  height: 500px;
-  margin: 25px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
 .round{
   border-radius: 15px;
 }
@@ -74,20 +127,10 @@ ul.nav a:hover, a:active {
 }
 
 #app{
-  background: #F0FFFF;
   font-family: "Open Sans";
   color: darkred;
 }
 
-.scroll-y{
-  height: 500px;
-  margin: 25px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.round{
-  border-radius: 15px;
-}
 
 .dot-border{
   border: 1px #F5D04C dashed;
@@ -196,7 +239,9 @@ background-color: #f1cbff
 
 }
 .pattern-box {
-  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;              /* "overflow" value must be different from "visible" */
+  text-overflow: ellipsis;
   display: inline-block;
   background-color: #e1f7d5;
   max-width:100%;
@@ -204,8 +249,6 @@ background-color: #f1cbff
   padding: 1em;
   margin: 10px;
 }
-
-
 
 .pattern-box-buffer a, a:hover, a:active {
   color: #ffffff;
@@ -225,7 +268,6 @@ background-color: #f1cbff
   padding: 2em;
 }
 
-
 .pattern-form-wrapper-solo{
   padding: 2em;
 }
@@ -244,10 +286,8 @@ video {
   z-index: 1;
   }
 
-.noverflow{
-  text-overflow: ellipsis;
-  display: block;
-  overflow: hidden;
+.container{
+  max-width: 60% !important;
 }
 
 .align-right {
@@ -258,14 +298,17 @@ video {
 
 .text-box {
   position: absolute;
+  height: auto;
   z-index: 2;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0; }
 
+
 .text-box-inside {
   text-align: center;
+  height: 100% !important;
   opacity: .85;
   padding: 2em;
   margin-top: 2%;
@@ -293,6 +336,9 @@ video {
   color: black;
 }
 
+.navbar {
+  margin-bottom: 0 !important;
+}
 
 .head-box{
 
@@ -336,4 +382,14 @@ video {
   border-top: 100px solid red;
   border-left: 100px solid transparent;
 
+}
+px solid transparent;
+
+}
+}
+}
+}
+
+
+}
 }
